@@ -1,4 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - TP Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">PULSE.</div>
+
+        <nav>
+            <a href="#proyecto">Proyecto</a>
+            <a href="#funciones">Funciones</a>
+            <a href="#sistema">Usuarios</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#desarrollo">Desarrollo</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="texto-banner">
+            <p class="subtitulo">PROYECTO FINAL · DESARROLLO WEB</p>
+            <h1>PULSE.</h1>
+            <h2>FEEL THE MUSIC.</h2>
+            <p>Un lugar para encontrar música y descubrir nuevos álbumes.</p>
+        </div>
+    </div>
+
+    <section id="proyecto">
+        <h2>¿De qué se trata?</h2>
+
+        <p>
+            La idea de PULSE es crear una página donde se puedan encontrar
+            distintos álbumes musicales y consultar información sobre ellos.
+            Elegí este tema porque me interesa la música y me pareció una
+            buena oportunidad para hacer un proyecto relacionado con algo
+            que me gusta.
+        </p>
+
+        <p>
+            Cada disco va a tener su portada, nombre, artista, género y año
+            de lanzamiento. La idea es que sea fácil recorrer la página y
+            encontrar música de distintos estilos.
+        </p>
+    </section>
+
+    <section class="portadas">
+        <h2>Algunos álbumes</h2>
+        <p>Estos son tres de los discos que elegí para mostrar en la página.</p>
+
+        <div class="cajitas">
+            <div class="album">
+                <img src="img/album1.jpg" alt="After Hours">
+                <h3>After Hours</h3>
+                <p>The Weeknd</p>
+                <p>2020 · Pop</p>
+            </div>
+
+            <div class="album">
+                <img src="img/album2.jpg" alt="City of Evil">
+                <h3>City of Evil</h3>
+                <p>Avenged Sevenfold</p>
+                <p>2005 · Heavy Metal</p>
+            </div>
+
+            <div class="album">
+                <img src="img/album3.jpg" alt="Random Access Memories">
+                <h3>Random Access Memories</h3>
+                <p>Daft Punk</p>
+                <p>2013 · Electronic</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="funciones">
+        <h2>¿Qué se podrá hacer?</h2>
+
+        <p>
+            Además de mirar los álbumes, PULSE va a tener algunas funciones
+            para que cada persona pueda utilizar su propia cuenta.
+        </p>
+
+        <div class="cajitas">
+            <div class="caja">
+                <h3>Catálogo</h3>
+                <p>Buscar y recorrer discos de diferentes artistas.</p>
+            </div>
+
+            <div class="caja">
+                <h3>Cuenta personal</h3>
+                <p>Crear un usuario e iniciar sesión.</p>
+            </div>
+
+            <div class="caja">
+                <h3>Favoritos</h3>
+                <p>Guardar los álbumes que más te gusten.</p>
+            </div>
+        </div>
+
+        <p>
+            También habrá una cuenta de administrador, que tendrá más
+            permisos que los usuarios normales y podrá controlar el
+            contenido de la página.
+        </p>
+    </section>
+
+    <section id="sistema">
+        <h2>Las cuentas de usuario</h2>
+
+        <p>
+            Una de las partes principales del trabajo va a ser el sistema
+            de usuarios. Para utilizar ciertas funciones, cada persona
+            tendrá que registrarse con sus datos y después podrá ingresar
+            con su correo y contraseña.
+        </p>
+
+        <p>
+            El administrador tendrá un apartado diferente. Desde ahí
+            podrá buscar usuarios, modificar algunos de sus datos y
+            archivar o reactivar cuentas cuando sea necesario.
+        </p>
+    </section>
+
+    <section id="tecnologias">
+        <h2>¿Con qué voy a trabajar?</h2>
+
+        <div class="cajitas">
+            <div class="caja">
+                <h3>HTML y CSS</h3>
+                <p>Los voy a utilizar para armar las páginas y todo su diseño.</p>
+            </div>
+
+            <div class="caja">
+                <h3>PHP</h3>
+                <p>Se encargará de procesar los datos y las funciones del sitio.</p>
+            </div>
+
+            <div class="caja">
+                <h3>MySQL</h3>
+                <p>Va a guardar la información de las cuentas y los álbumes.</p>
+            </div>
+        </div>
+
+        <p>
+            Para trabajar voy a utilizar Visual Studio Code y XAMPP.
+            También usaré phpMyAdmin para manejar la base de datos.
+        </p>
+    </section>
+
+    <section id="base-datos">
+        <h2>Cómo se guardará la información</h2>
+
+        <p>
+            La información se va a organizar en una base de datos MySQL.
+            Por un lado estarán los datos de los usuarios y, por otro,
+            la información de los discos.
+        </p>
+
+        <p>
+            En el caso de las imágenes, las portadas se guardarán en una
+            carpeta del servidor. En la base de datos solamente se
+            almacenará la ruta para poder mostrarlas después.
+        </p>
+    </section>
+
+    <section id="seguridad">
+        <h2>Seguridad</h2>
+
+        <p>
+            También hay que tener en cuenta la seguridad de las cuentas.
+            Las contraseñas no se van a guardar como texto normal, sino
+            utilizando las funciones de protección que ofrece PHP.
+        </p>
+
+        <p>
+            Además, se van a utilizar consultas preparadas con PDO
+            para trabajar con la base de datos y se comprobarán los
+            permisos antes de permitir el acceso al panel de administración.
+        </p>
+    </section>
+
+    <section id="desarrollo">
+        <h2>Cómo pienso organizar el trabajo</h2>
+
+        <p>
+            Primero voy a terminar el diseño de las páginas y después
+            empezaré a trabajar con la base de datos. Una vez que esté
+            lista la conexión con PHP, voy a desarrollar el registro,
+            el inicio de sesión y las funciones del administrador.
+        </p>
+
+        <p>
+            Por último, voy a probar las distintas partes del sistema
+            para comprobar que funcionen correctamente y corregir
+            los errores que puedan aparecer.
+        </p>
+    </section>
+
+    <footer>
+        <h2>PULSE.</h2>
+        <p>Proyecto Final - Santino Ipar</p>
+    </footer>
+
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="es">
 <head>
