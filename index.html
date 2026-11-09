@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - TP Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">PULSE.</div>
+
+        <nav>
+            <a href="#proyecto">Proyecto</a>
+            <a href="#funciones">Funciones</a>
+            <a href="#sistema">Usuarios</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#desarrollo">Desarrollo</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="texto-banner">
+            <p class="subtitulo">PROYECTO FINAL · DESARROLLO WEB</p>
+            <h1>PULSE.</h1>
+            <h2>FEEL THE MUSIC.</h2>
+            <p>Una plataforma musical con un sistema de gestión de usuarios.</p>
+        </div>
+    </div>
+
+    <section id="proyecto">
+        <h2>¿De qué se trata?</h2>
+
+        <p>
+            PULSE es una página web con temática musical que presenta
+            distintos álbumes y artistas. Elegí este tema porque me
+            interesa la música y quería relacionar el proyecto con algo
+            que me gusta.
+        </p>
+
+        <p>
+            Además de su página principal, el sitio cuenta con un sistema
+            de registro, inicio de sesión y administración de usuarios.
+        </p>
+    </section>
+
+    <section class="portadas">
+        <h2>Algunos álbumes</h2>
+        <p>Estos son tres de los discos que elegí para mostrar en la página.</p>
+
+        <div class="cajitas">
+            <div class="album">
+                <img src="img/album1.jpg" alt="After Hours">
+                <h3>After Hours</h3>
+                <p>The Weeknd</p>
+                <p>2020 · Pop</p>
+            </div>
+
+            <div class="album">
+                <img src="img/album2.jpg" alt="City of Evil">
+                <h3>City of Evil</h3>
+                <p>Avenged Sevenfold</p>
+                <p>2005 · Heavy Metal</p>
+            </div>
+
+            <div class="album">
+                <img src="img/album3.jpg" alt="Random Access Memories">
+                <h3>Random Access Memories</h3>
+                <p>Daft Punk</p>
+                <p>2013 · Electronic</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="funciones">
+        <h2>Funciones del sistema</h2>
+
+        <p>
+            PULSE cuenta con diferentes funciones para administrar
+            las cuentas de los usuarios.
+        </p>
+
+        <div class="cajitas">
+            <div class="caja">
+                <h3>Registro</h3>
+                <p>Crear una cuenta ingresando los datos personales.</p>
+            </div>
+
+            <div class="caja">
+                <h3>Inicio de sesión</h3>
+                <p>Ingresar al sistema utilizando correo y contraseña.</p>
+            </div>
+
+            <div class="caja">
+                <h3>Administración</h3>
+                <p>Buscar, editar, archivar y reactivar usuarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistema">
+        <h2>Las cuentas de usuario</h2>
+
+        <p>
+            El sistema permite que cada persona se registre con sus
+            datos y después pueda ingresar utilizando su correo
+            electrónico y contraseña.
+        </p>
+
+        <p>
+            Cada usuario tiene un panel personal. También existe
+            una cuenta de administrador con permisos especiales
+            para buscar usuarios, modificar sus datos, archivar
+            cuentas y reactivarlas cuando sea necesario.
+        </p>
+    </section>
+
+    <section id="tecnologias">
+        <h2>¿Con qué trabajé?</h2>
+
+        <div class="cajitas">
+            <div class="caja">
+                <h3>HTML y CSS</h3>
+                <p>Los utilicé para armar las páginas y todo su diseño.</p>
+            </div>
+
+            <div class="caja">
+                <h3>PHP</h3>
+                <p>Se encarga de procesar los datos y las funciones del sitio.</p>
+            </div>
+
+            <div class="caja">
+                <h3>MySQL</h3>
+                <p>Guarda la información de las cuentas de usuario.</p>
+            </div>
+        </div>
+
+        <p>
+            Para trabajar utilicé Visual Studio Code y XAMPP.
+            También utilicé phpMyAdmin para manejar la base de datos.
+        </p>
+    </section>
+
+    <section id="base-datos">
+        <h2>Cómo se guarda la información</h2>
+
+        <p>
+            La información se organiza en una base de datos MySQL
+            llamada sistema_usuarios.
+        </p>
+
+        <p>
+            La tabla usuarios almacena los datos personales,
+            el correo, la contraseña protegida, el rol y las fechas
+            de creación y archivado de cada cuenta.
+        </p>
+    </section>
+
+    <section id="seguridad">
+        <h2>Seguridad</h2>
+
+        <p>
+            Las contraseñas se guardan de forma protegida utilizando
+            las funciones password_hash() y password_verify() de PHP.
+        </p>
+
+        <p>
+            También se utilizan consultas preparadas con PDO,
+            control de sesiones y validación de permisos para
+            proteger el acceso al panel de administración.
+        </p>
+    </section>
+
+    <section id="desarrollo">
+        <h2>Desarrollo del proyecto</h2>
+
+        <p>
+            Primero preparé el diseño de la página y la estructura
+            de la base de datos. Después desarrollé la conexión
+            con PHP y el sistema de registro e inicio de sesión.
+        </p>
+
+        <p>
+            Finalmente, desarrollé las funciones de administración
+            de usuarios, incluyendo la búsqueda, edición, archivado
+            y reactivación de cuentas, y realicé pruebas para
+            comprobar que funcionaran correctamente.
+        </p>
+    </section>
+
+    <footer>
+        <h2>PULSE.</h2>
+        <p>Proyecto Final - Santino Ipar</p>
+    </footer>
+
+</body>
+</html>
